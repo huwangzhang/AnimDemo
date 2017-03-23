@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <!--oneshot控制动画是否循环播放-->
+    <item android:drawable="@drawable/sample1" android:duration="60" />
+    <item android:drawable="@drawable/sample2" android:duration="60" />
+    <item android:drawable="@drawable/sample3" android:duration="60" />
+    <item android:drawable="@drawable/sample4" android:duration="60" />
+    <item android:drawable="@drawable/sample5" android:duration="60" />
+    <item android:drawable="@drawable/sample6" android:duration="60" />
+    <item android:drawable="@drawable/sample7" android:duration="60" />
+    <item android:drawable="@drawable/sample8" android:duration="60" />
+    <item android:drawable="@drawable/sample9" android:duration="60" />
+    <item android:drawable="@drawable/sample10" android:duration="60" />
+    <item android:drawable="@drawable/sample11" android:duration="60" />
+    <item android:drawable="@drawable/sample12" android:duration="60" />
+    <item android:drawable="@drawable/sample13" android:duration="60" />
+    <item android:drawable="@drawable/sample14" android:duration="60" />
+    <item android:drawable="@drawable/sample15" android:duration="60" />
+    <item android:drawable="@drawable/sample16" android:duration="60" />
+    <item android:drawable="@drawable/sample17" android:duration="60" />
+    <item android:drawable="@drawable/sample18" android:duration="60" />
+    <item android:drawable="@drawable/sample19" android:duration="60" />
+    <item android:drawable="@drawable/sample20" android:duration="60" />
+    <item android:drawable="@drawable/sample21" android:duration="60" />
+    <item android:drawable="@drawable/sample22" android:duration="60" />
+    <item android:drawable="@drawable/sample23" android:duration="60" />
+    <item android:drawable="@drawable/sample24" android:duration="60" />
+    <item android:drawable="@drawable/sample25" android:duration="60" />
+    <item android:drawable="@drawable/sample26" android:duration="60" />
+    <item android:drawable="@drawable/sample27" android:duration="60" />
+    <item android:drawable="@drawable/sample28" android:duration="60" />
+    <item android:drawable="@drawable/sample29" android:duration="60" />
+    <item android:drawable="@drawable/sample30" android:duration="60" />
+    <item android:drawable="@drawable/sample31" android:duration="60" />
+</animation-list>
