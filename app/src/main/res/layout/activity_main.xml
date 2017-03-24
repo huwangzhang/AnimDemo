@@ -16,4 +16,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/tween_btn"
         android:text="补间动画demo"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/value_btn"
+        android:text="属性动画demo"/>
 </LinearLayout>
