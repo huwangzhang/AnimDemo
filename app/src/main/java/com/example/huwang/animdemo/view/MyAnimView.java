@@ -10,7 +10,9 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
+import android.view.animation.AccelerateDecelerateInterpolator;
 
+import com.example.huwang.animdemo.DecelerateAccelerateInterpolator;
 import com.example.huwang.animdemo.PointEvaluator;
 import com.example.huwang.animdemo.bean.Point;
 import com.example.huwang.animdemo.evaluator.ColorEvaluator;
@@ -60,6 +62,7 @@ public class MyAnimView extends View {
                 invalidate();
             }
         });
+        anim.setInterpolator(new DecelerateAccelerateInterpolator());
         ObjectAnimator anim2 = ObjectAnimator.ofObject(this, "color", new ColorEvaluator(),
                 "#0000FF", "#FF0000");
         AnimatorSet animSet = new AnimatorSet();
