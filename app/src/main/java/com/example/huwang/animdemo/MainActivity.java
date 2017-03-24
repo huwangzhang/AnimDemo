@@ -1,25 +1,35 @@
 package com.example.huwang.animdemo;
 
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
-public class MainActivity extends AppCompatActivity {
-    ImageView imageView;
-    AnimationDrawable am;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        imageView = (ImageView)findViewById(R.id.view);
-        am = (AnimationDrawable)imageView.getBackground();
+        Button frame_btn = (Button) findViewById(R.id.frame_btn);
+        Button tween_btn = (Button) findViewById(R.id.tween_btn);
+        frame_btn.setOnClickListener(this);
+        tween_btn.setOnClickListener(this);
     }
-    public void play(View view) {
-        am.start();
-    }
-    public void stop(View view) {
-        am.stop();
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.tween_btn :
+                startActivity(new Intent(v.getContext(), TweenAnimationDemo.class));
+                finish();
+                break;
+            case R.id.frame_btn :
+                startActivity(new Intent(v.getContext(), FrameAnimationDemo.class));
+                finish();
+                break;
+        }
     }
 }

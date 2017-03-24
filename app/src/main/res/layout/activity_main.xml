@@ -7,22 +7,13 @@
     tools:context="com.example.huwang.animdemo.MainActivity">
 
     <Button
-        android:text="开始动画"
+        android:text="逐帧动画demo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/play"
-        android:onClick="play"/>
+        android:id="@+id/frame_btn"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/stop"
-        android:onClick="stop"
-        android:text="结束动画"/>
-    <ImageView
-
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/sample"/>
+        android:id="@+id/tween_btn"
+        android:text="补间动画demo"/>
 </LinearLayout>

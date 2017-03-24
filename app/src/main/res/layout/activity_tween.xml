@@ -7,6 +7,8 @@
     tools:context="com.example.huwang.animdemo.MainActivity">
 
     <LinearLayout
+        android:id="@+id/mmm"
+        android:gravity="left"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
@@ -33,18 +35,39 @@
             android:layout_height="wrap_content"
             android:id="@+id/translate_start"
             android:onClick="translate"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/mmm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
         <Button
             android:text="set"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/set_start"
             android:onClick="set"/>
-
+        <Button
+            android:layout_below="@id/mmm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mystart"
+            android:onClick="mystart"
+            android:text="自定义动画"/>
     </LinearLayout>
+
     <ImageView
         android:layout_centerInParent="true"
         android:id="@+id/image_view"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:background="@drawable/sample1"/>
+    <Button
+        android:id="@+id/prePage"
+        android:text="主页面"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
 </RelativeLayout>
